@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <title>AS Cars Dealership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1AS Cars Dealership</h1>
+    <p>Luxury • Performance • Trust</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="cars.html">Cars</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero-home">
+    <h2>Not Just Cars,<br>We Sell Dreams.</h2>
+    <p>Premium cars hand-picked for power, comfort & class</p>
+    <a href="cars.html" class="btn">View Collection</a>
+</section>
+
+<section class="features">
+    <div class="feature-box">
+        <h3>💎 Luxury Brands</h3>
+        <p>BMW, Audi, Mercedes, Porsche & more</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>⚡ Best Performance</h3>
+        <p>High speed, power & smooth driving</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>🤝 Trusted Dealer</h3>
+        <p>100% genuine & verified vehicles</p>
+    </div>
+</section>
+<section class="test-drive">
+    <h2>🚗 Book a Test Drive</h2>
+    <p>Experience the car before you decide</p>
+
+    <form onsubmit="return bookTestDrive()">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        
+        <select id="car" required>
+            <option value="">Select Car</option>
+            <option>BMW 5 Series</option>
+            <option>Audi A6</option>
+            <option>Mercedes C-Class</option>
+            <option>Porsche 911</option>
+            <option>Lamborghini Huracán</option>
+            <option>Tesla Model S</option>
+        </select>
+
+        <input type="date" required>
+
+        <button type="submit">Book Test Drive</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Dream Cars Dealership | Designed with ❤️</p>
+</footer>
+<script>
+function bookTestDrive() {
+    alert("✅ Test Drive Booked Successfully!\nOur team will contact you soon 🚗");
+    return false;
+}
+</script>
+
+</body>
+</html>
+
